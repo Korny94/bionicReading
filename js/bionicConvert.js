@@ -10,6 +10,22 @@ const inputFile = document.querySelector("#inputFile");
 
 const docSize = document.querySelector("#outputDocSize");
 
+convertBtn.onmousedown = function () {
+  convertBtn.style.transform = "scale(.95)";
+};
+
+convertBtn.onmouseup = function () {
+  convertBtn.style.transform = "scale(1)";
+};
+
+convertBtn.onmouseover = function () {
+  convertBtn.style.transform = "scale(1.05)";
+};
+
+convertBtn.onmouseleave = function () {
+  convertBtn.style.transform = "scale(1)";
+};
+
 docSize.ondblclick = function () {
   output.style.height = 10 + "vh";
   output.style.width = 50 + "vw";
@@ -95,5 +111,9 @@ convertBtn.onclick = function () {
     output.style.height = wordCount / 1.1 + "vh";
   } else if (wordCount > 79) {
     output.style.height = "85vh";
+  }
+  if (output.innerText == "") {
+    output.style.height = "10vh";
+    output.style.width = "50vw";
   }
 };

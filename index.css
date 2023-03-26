@@ -37,13 +37,21 @@ details {
 }
 
 .bionicConverterBtn {
-  width: 200px;
+  width: 300px;
   font-family: inter, Helvetica, Arial, sans-serif, Times, serif;
+  font-size: 1.2rem;
   font-weight: 750;
-  padding: 0.5rem;
-  background-color: rgb(236, 236, 236);
-  border: 1px solid black;
+  padding: 1rem;
+  background-color: rgba(244, 244, 244, 0.539);
   cursor: pointer;
+  border: none;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: ease-in-out 200ms;
+}
+
+.bionicConverterBtn:hover {
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .inputText {
