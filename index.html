@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/index.css" rel="stylesheet" />
+    <script src="/js/bionicConvert.js" defer></script>
+    <title>Home | Book Summaries</title>
+  </head>
+  <body>
+    <h1>Bionic Reading Converter</h1>
+    <div class="bionicConverter">
+      <div class="inputDiv">
+        <textarea
+          rows="20"
+          class="inputText"
+          id="inputText"
+          placeholder="Input text you want to convert to Bionic Font"
+        ></textarea>
+        <input type="file" class="inputFile" id="inputFile" />
+      </div>
+
+      <button
+        class="bionicConverterBtn"
+        id="bionicConverterBtn"
+        title="Bionic reading may make the words easier to process"
+      >
+        Convert to Bionic Reading
+      </button>
+      <div id="outputColors" class="outputColors">
+        <div class="gap">
+          <div class="outputDivs">
+            <label for="outputTextSize" class="labelTextSize">Text Size:</label>
+            <input
+              type="range"
+              value="24"
+              min="4"
+              max="44"
+              class="outputTextSize"
+              id="outputTextSize"
+            />
+          </div>
+          <div class="outputDivs">
+            <label for="outputTextSize" class="labelTextSize"
+              >Document Size:</label
+            >
+            <input
+              type="range"
+              value="24"
+              min="4"
+              max="44"
+              class="outputDocSize"
+              id="outputDocSize"
+            />
+          </div>
+        </div>
+        <div class="gap">
+          <div class="outputDivs">
+            <label for="outputBgColor" class="labelBgColor"
+              >Background Color:</label
+            >
+            <input type="color" class="outputBgColor" id="outputBgColor" />
+          </div>
+
+          <div class="outputDivs">
+            <label for="outputBgColor" class="labelTextColor"
+              >Text Color:</label
+            >
+            <input type="color" class="outputTextColor" id="outputTextColor" />
+          </div>
+        </div>
+      </div>
+      <pre class="outputText" id="outputText"></pre>
+    </div>
+  </body>
+</html>
