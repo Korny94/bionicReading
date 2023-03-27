@@ -124,8 +124,9 @@ details {
   }
   .outputText {
     width: 75vw;
+    max-width: 85vw;
     height: 20vh;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.2rem;
   }
 
   .gap {
